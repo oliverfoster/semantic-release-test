@@ -2,7 +2,7 @@
   "name": "semantic-release-test",
   "version": "1.0.0",
   "scripts": {
-      "preinstall": "cp package.json bower.json && node gitmodules.js"
+      "postversion": "cp package.json bower.json"
   },
   "private": true,
   "dependencies": {
