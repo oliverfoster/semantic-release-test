@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/add-to-project@v0.1.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SECRET_TOKEN }}
         with:
           project-url: https://github.com/users/oliverfoster/projects/2
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.SECRET_TOKEN }}
