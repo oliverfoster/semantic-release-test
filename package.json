@@ -2,36 +2,35 @@
   "name": "semantic-release-test",
   "version": "1.0.0",
   "scripts": {
-      "postversion": "cp package.json bower.json"
+    "postversion": "cp package.json bower.json"
   },
   "private": true,
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-      "@semantic-release/git": "^10.0.1",
-      "conventional-changelog-eslint": "^3.0.9",
-      "semantic-release": "^19.0.3"
+    "@semantic-release/git": "^10.0.1",
+    "conventional-changelog-eslint": "^3.0.9",
+    "semantic-release": "^19.0.3"
   },
   "release": {
-      "plugins": [
-          "@semantic-release/release-notes-generator",
-          "@semantic-release/npm",
-          "@semantic-release/github",
-          [
-              "@semantic-release/commit-analyzer",
-              {
-                  "preset": "eslint"
-              }
+    "plugins": [
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "eslint"
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json"
           ],
-          [
-              "@semantic-release/git",
-              {
-                  "assets": [
-                      "package.json"
-                  ],
-                  "message": "Chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-              }
-          ]
+          "message": "Chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
       ]
+    ]
   }
 }
