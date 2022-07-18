@@ -1,4 +1,4 @@
-name: Add bugs to bugs project
+name: Add to project
 
 on:
   issues:
@@ -10,10 +10,10 @@ on:
 
 jobs:
   add-to-project:
-    name: Add issue to project
+    name: Add to project
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/add-to-project@RELEASE_VERSION
+      - uses: actions/add-to-project@v0.1
         with:
           project-url: https://github.com/users/oliverfoster/projects/2
           github-token: ${{ secrets.GITHUB_TOKEN }}
