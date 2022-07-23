@@ -11,3 +11,4 @@ function main() {
 // testing
 // splodge
 // issue/30
+// issue/32
