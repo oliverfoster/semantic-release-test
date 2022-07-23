@@ -1,13 +1,16 @@
 {
   "name": "semantic-release-test",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "scripts": {
     "postversion": "cp package.json bower.json"
   },
   "private": true,
   "dependencies": {},
   "devDependencies": {
+    "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.5",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "conventional-changelog-eslint": "^3.0.9",
     "semantic-release": "^19.0.3"
   },
