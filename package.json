@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-test",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "scripts": {
     "postversion": "cp package.json bower.json"
   },
